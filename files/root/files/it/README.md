@@ -1,48 +1,48 @@
-## Developer Guide
+## Guida per gli sviluppatori
 
-- [JSON Format Documentation](json/README.md)
-- [Markup Format Documentation](markup/README.md)
+- [Documentazione del formato JSON](json/README.md)
+- [Documentazione del formato Markup](markup/README.md)
 
-### File Structure
+### Struttura dei file
 ```bash
 files/
-├─ json/         # intermediate json docs definitons
-├─ markup/       # markup docs definitons
-├─ docs-base/    # docs template folder for every language/version
-├─ font-awesome/ # belongs to docs-base
+├─ json/         # definizioni di documenti json intermedi
+├─ markup/       # definizioni di documenti markup
+├─ docs-base/    # cartella modello dei documenti per ogni lingua/versione
+├─ font-awesome/ # appartiene a docs-base
 │
-├─ conf.json     # general generation info (languages, scopes, type defs, ...)
-├─ generate.js   # convert json/ to out/ html docs
-├─ updatePages.js      # copy temporary out/ to public docs/
-├─ jsdoc-parser.js     # convert markup/ to json/
-├─ markup-generator.js # convert json/ to markup/ (verify bidirectional conversion)
-├─ testLinks.sh        # check all docs-internal links valid
-├─ adjustJson.js       # cleanup JSON files (trim(), remove empty, sort keys, ...)
-├─ transformPopups.js  # convert html popups in markup/ files
+├─ conf.json     # informazioni generali di generazione (lingue, ambiti, definizioni di tipo, ...)
+├─ generate.js   # converte json/ in documenti html nella cartella out/
+├─ updatePages.js      # copia temporaneamente out/ in docs/ pubblici
+├─ jsdoc-parser.js     # converte markup/ in json/
+├─ markup-generator.js # converte json/ in markup/ (verifica la conversione bidirezionale)
+├─ testLinks.sh        # controlla che tutti i link interni alla documentazione siano validi
+├─ adjustJson.js       # pulizia dei file JSON (trim(), rimozione vuoti, ordinamento chiavi, ...)
+├─ transformPopups.js  # converte i popup html nei file markup/
 │
-├─ ReleaseNotes.txt    # incremental ReleaseNotes
-├─ animate.png   # used by app.Animate doc
+├─ ReleaseNotes.txt    # ReleaseNotes incrementali
+├─ animate.png   # utilizzato dalla documentazione di app.Animate
 │
-├─ types.d.ts    # DS and generator type definitions for vscode
-├─ jsconfig.json # vscode js/ts linter settings
-└─ package.json  # script npm package dependencies
+├─ types.d.ts    # definizioni di tipo di DS e generator per vscode
+├─ jsconfig.json # impostazioni linter js/ts per vscode
+└─ package.json  # dipendenze dei pacchetti npm degli script
 ```
 
 
-### NPM Command Palette
+### Palette comandi NPM
 
-Install dependencies
-- `npm i` 
+Installa le dipendenze
+- `npm i`
 
-Generation Pipelines
-- `npm run generate` generate out/docs from json
-- `npm run generateDocs` generate displayed docs from json
-- `npm run updateVersion` generate displayed docs and updates version
+Pipeline di generazione
+- `npm run generate` genera out/docs dai file json
+- `npm run generateDocs` genera la documentazione visualizzata dai file json
+- `npm run updateVersion` genera la documentazione visualizzata e aggiorna la versione
 
-Individual pipeline steps
-- `npm run docs` generate out/docs from json
-- `npm run docs-lazy` docs, but regenerates only outdated scopes
-- `npm run update` docs-lazy, but updates out/version.txt
-- `npm run updatePages` update displayed docs (copy out/ to docs/)
-- `npm run json` convert markup files to json
-- `npm run markup` convert json files to markup
+Passaggi individuali della pipeline
+- `npm run docs` genera out/docs dai file json
+- `npm run docs-lazy` docs, ma rigenera solo gli ambiti obsoleti
+- `npm run update` docs-lazy, ma aggiorna out/version.txt
+- `npm run updatePages` aggiorna la documentazione visualizzata (copia out/ in docs/)
+- `npm run json` converte i file markup in json
+- `npm run markup` converte i file json in markup

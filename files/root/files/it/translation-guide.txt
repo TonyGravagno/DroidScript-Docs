@@ -1,16 +1,16 @@
-Translate following texts:
+Tradurre i seguenti testi:
 
 app.json, app-base.json, intro.json
 	desc
 	shortDesc
 
 app-navs.json
-	only the keys, not the lists
+        solo le chiavi, non le liste
 
 app/*.md
 intro/*.md
 
-the values of this object:
+i valori di questo oggetto:
 
 {
 	"all":"all types",
