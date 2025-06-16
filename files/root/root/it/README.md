@@ -1,62 +1,62 @@
-# Docs
-## Table of Contents
+# Documentazione
+## Indice
 
-- [Docs](#docs)
-  - [Table of Contents](#table-of-contents)
-  - [The Official DroidScript Documentation](#the-official-droidscript-documentation)
-  - [Structure](#structure)
-  - [For Contributors:](#for-contributors)
-    - [Fork the DroidScript Repository](#fork-the-droidscript-repository)
-    - [Make Changes](#make-changes)
-    - [Commit Changes](#commit-changes)
-    - [Create a Pull Request](#create-a-pull-request)
-    - [Check on your Pull Request](#check-on-your-pull-request)
+- [Documentazione](#documentazione)
+  - [Indice](#indice)
+  - [Documentazione Ufficiale di DroidScript](#documentazione-ufficiale-di-droidscript)
+  - [Struttura](#struttura)
+  - [Per i Collaboratori](#per-i-collaboratori)
+    - [Forka il repository DroidScript](#forka-il-repository-droidscript)
+    - [Apporta Modifiche](#apporta-modifiche)
+    - [Esegui il Commit delle Modifiche](#esegui-il-commit-delle-modifiche)
+    - [Crea una Pull Request](#crea-una-pull-request)
+    - [Controlla la tua Pull Request](#controlla-la-tua-pull-request)
 
-## The Official DroidScript Documentation
+## Documentazione Ufficiale di DroidScript
 
-Preview available at https://droidscript.github.io/Docs
+Anteprima disponibile su https://droidscript.github.io/Docs
 
-Mobile-sized iframe for desktop browsers: https://droidscript.github.io/Docs/docs
+Iframe a dimensione mobile per browser desktop: https://droidscript.github.io/Docs/docs
 
-DocsPreview app for downloading the latest docs: https://github.com/SymDSTools/DocsPreview
+Applicazione DocsPreview per scaricare la documentazione più recente: https://github.com/SymDSTools/DocsPreview
 
-More DS tools [here](https://github.com/SymDSTools)
+Altri strumenti DS [qui](https://github.com/SymDSTools)
 
-## Structure
+## Struttura
 
-- **docs:** The latest generated documentation for the GitHub Pages preview
-- **files:** docs source files and generation scripts
+- **docs:** La documentazione più recente generata per l'anteprima su GitHub Pages
+- **files:** i file sorgente della documentazione e gli script di generazione
 
-The docs sources are written in a custom [markup format](files/markup/README.md). For legacy reasons those markup files will be converted into an intermediate [JSON Format](files/json/README.md) which will then be converted to the HTML docs you all know and love.
+Le sorgenti della documentazione sono scritte in un [formato markup](files/markup/README.md) personalizzato. Per motivi di compatibilità questi file di markup vengono convertiti in un formato [JSON](files/json/README.md) intermedio che verrà poi trasformato nella documentazione HTML che tutti conoscete e amate.
 
-## For Contributors:
+## Per i Collaboratori
 
-To contribute to the Docs you need to have an active GitHub account. [Sign up](https://github.com/signup?source_repo=DroidScript%2FDocs) if you don't have one.
+Per contribuire alla documentazione devi avere un account GitHub attivo. [Registrati](https://github.com/signup?source_repo=DroidScript%2FDocs) se non ne hai uno.
 
-### Fork the DroidScript Repository
-To edit the Docs you need to 'fork' the DroidScript repository. The easiest way is to open up a new Codespace on the DroidScript repository.
+### Forka il repository DroidScript
+Per modificare la documentazione devi "forkare" il repository DroidScript. Il modo più semplice è aprire un nuovo Codespace sul repository DroidScript.
 
 <p align="center"><img src="files/Screenshot-Codespace.jpg" alt="Open Codespace Dialog" width="100%" style="max-width:1000px"></p>
 
-### Make Changes
-When the Codespace is open, navigate to the files/markup/en directory and make changes on any file you want to contribute. DroidScript has multiple scopes each having its own subdirectory with every possible method defined as _markup.js_ file. Inside you can modify the description, subfunctions, parameters and more. Make sure to follow the [markup format](files/markup/README.md)!
+### Apporta Modifiche
+Quando il Codespace è aperto, naviga nella directory files/markup/en e modifica qualsiasi file a cui vuoi contribuire. DroidScript ha diversi ambiti ognuno con la propria sottodirectory che contiene tutti i possibili metodi definiti come file _markup.js_. All'interno puoi modificare la descrizione, le sottofunzioni, i parametri e altro. Assicurati di seguire il [formato markup](files/markup/README.md)!
 
-### Commit Changes
-When you finished your changes switch to the git tab on the left and descibe briefly what you have changed in the commit message field. The first line should describe what you did in general and each following line should include a more detailed list of your changes.\
-After that commit and synchronize your changes to GitHub with the green button below. If you just opened the Codespace on the DroidScript repository it will ask to create a fork.
+### Esegui il Commit delle Modifiche
+Quando hai finito le modifiche passa alla scheda git a sinistra e descrivi brevemente cosa hai cambiato nel campo del messaggio di commit. La prima riga dovrebbe descrivere in generale cosa hai fatto e ogni riga successiva dovrebbe includere un elenco più dettagliato delle tue modifiche.\
+Dopodiché esegui il commit e sincronizza le tue modifiche su GitHub con il pulsante verde in basso. Se hai appena aperto il Codespace sul repository DroidScript ti verrà chiesto di creare un fork.
 
-**Note:** there is an ongoing Codespace bug that prevents you from committing to your fork. If that applies to you, open your workspace terminal and execute `git push --set-upstream origin master`
+**Nota:** esiste un bug persistente di Codespace che impedisce il commit sul tuo fork. Se ti capita, apri il terminale del workspace ed esegui `git push --set-upstream origin master`
 
 <p align="center"><img src="files/Screenshot-Changes.jpg" alt="Commit Description Dialog" width="100%" style="max-width:1000px"></p>
 
-### Create a Pull Request
-When you are satisfied with your changes and want us to review your changes, go on to the GitHub tab on the left and hit the small 'Create Pull Request' Button that appears on the 'Pull Requests' dropdown menu. This will open a new 'Pull Request' tab where you can provide a description of your changes across all commits you made. You can also review all your commits and changed files. After that hit the green 'Create' button. 
+### Crea una Pull Request
+Quando sei soddisfatto delle modifiche e vuoi che vengano revisionate, passa alla scheda GitHub a sinistra e premi il piccolo pulsante 'Create Pull Request' che appare nel menu a discesa 'Pull Requests'. Si aprirà una nuova scheda 'Pull Request' dove potrai fornire una descrizione delle modifiche di tutti i commit effettuati. Puoi anche rivedere tutti i tuoi commit e i file modificati. Dopo premi il pulsante verde 'Create'.
 
 <p align="center"><img src="files/Screenshot-PullRequest.jpg" alt="Pull Request Dialog" width="100%" style="max-width:1000px"></p>
 
-### Check on your Pull Request
-When a developer is satisfied with the request he will merge them into the DroidScript repository. If not he will leave a comment on [your pull request](https://github.com/DroidScript/Docs/pull/60) so make sure to regulary check on it until it gets approved, and enable notifications.
+### Controlla la tua Pull Request
+Quando uno sviluppatore è soddisfatto della richiesta la unirà al repository DroidScript. In caso contrario lascerà un commento sulla [tua pull request](https://github.com/DroidScript/Docs/pull/60) quindi assicurati di controllarla regolarmente finché non verrà approvata e abilita le notifiche.
 
 <div style="text-align:center">
-<b><big>Thank you for your contribution and support of </strong>DroidScript.org</strong>.!</big></b>
+<b><big>Grazie per il tuo contributo e per il supporto a </strong>DroidScript.org</strong>!</big></b>
 </div>
